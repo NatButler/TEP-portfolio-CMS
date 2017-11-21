@@ -249,17 +249,17 @@ nav#main {
 
 #thumbnails li {
 	float: left;
-	margin-right: 6px;
+	/*margin-right: 6px;*/
 }
 
 #thumbnails img {
-	float: left;
+	/*float: left;*/
 	/*display: inline-block;*/
 	margin-bottom: 6px;
 	margin-right: 6px;
 	cursor: pointer;
 	opacity: 0.4;
-	width: 90px;
+	width: 185px;
 }
 
 #thumbnails img:hover {
@@ -309,11 +309,15 @@ nav#main {
 		left: -200px;
 		bottom: 7px;
 		border-right: 1px solid #ccc;
-		overflow: hidden;
+		overflow: auto;
 		padding: 0;
 	}
 	#main-content {
 		padding-left: 200px !important;
+	}
+
+	#thumbnails {
+		top: 7px;
 	}
 }
 
@@ -323,7 +327,7 @@ nav#main {
 		border-right: 1px solid #ccc;
 		position: fixed;
 		top: 70px;
-		left: -224px;
+		left: -200px;
 		bottom: 7px;
 	}
 	#aside-tab {
@@ -352,6 +356,10 @@ nav#main {
 	#main-content.expanded {
 		padding-left: 0px;
 	}
+
+	#thumbnails {
+		top: -26px;
+	}
 }
 
 @media (max-width: 1160px) and (min-width: 1021px) {
@@ -360,6 +368,7 @@ nav#main {
 		border-right: 1px solid #ccc;
 		position: fixed;
 		top: 70px;
+		left: 100px;
 		bottom: 7px;
 	}
 	#aside.initial {
@@ -398,6 +407,14 @@ nav#main {
 	}
 	#location {
 		left: 120px;
+	}
+
+	#thumbnails {
+		top: -23px;
+	}
+
+	#thumbnails img {
+		width: 90px;
 	}
 }
 

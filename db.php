@@ -1,17 +1,15 @@
 <?php namespace T_E\DB;
 
-$config = array(
-	'username' => 'root',
-	'password' => 'hanOrsonZeb2017',
-	'database' => 'tep' // textured_earth
-);
+require 'config.php';
+
 
 function connect($config)
 {
 	try {
-		$conn = new \PDO('mysql:host=127.0.0.1;dbname=' . $config['database'],
-						$config['username'],
-						$config['password']);
+		$conn = new \PDO('mysql:host=127.0.0.1;dbname=' . $config['DB_DATABASE'],
+																											$config['DB_USERNAME'],
+																											$config['DB_PASSWORD']);
+		
 		$conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
 		return $conn;

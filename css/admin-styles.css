@@ -191,6 +191,26 @@ form #username {
 }
 
 /*******************
+----PAGE TEXT-------
+*******************/
+.function-button {
+	border: 1px solid #000000; 
+	display: inline; 
+	padding: 4px 6px 6px 4px; 
+	cursor: pointer;
+	font-size: 11px;
+	background: #fff;
+}
+
+.function-button:hover {
+	background-color: #ccc;
+}
+
+.function-button:active {
+	outline: none;
+}
+
+/*******************
 ----LOGIN-----------
 *******************/
 #login-container {
@@ -452,6 +472,7 @@ li.top {
 }
 
 #lightbox-img {
+	max-height: 667px;
 	cursor: pointer;
 }
 

@@ -7,8 +7,8 @@ session_start();
 
 if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 	// get their values
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$username = htmlspecialchars($_POST['username']);
+	$password = htmlspecialchars($_POST['password']);
 	$login_datetime = date("Y-m-d H:i:s");
 
 	$credentials = DB\get_user_cred('users', $username, $conn);
@@ -32,9 +32,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!DOCTYPE HTML>
-
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 
@@ -56,7 +54,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 	<link href="../../img/icons/favicon.ico" rel="icon">
 
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
-	<script src="../js/jQuery_1.10.2.js"></script>
+	<!-- <script src="../js/jQuery_1.10.2.js"></script> -->
 
 </head>
 <body>
@@ -85,7 +83,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 		</form>
 		<p style="margin-top: 10px;"><a href="#">Forgotten password?</a></p>
 			<?php if ( isset($status) ) : ?>
-			<p style="color: red"><?php echo $status; ?></p>
+				<p style="color: red"><?php echo $status; ?></p>
 			<?php endif; ?>
 	</div>
 </body>

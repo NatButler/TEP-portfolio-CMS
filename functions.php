@@ -11,7 +11,6 @@ function is_logged_in()
 
 function validate_user_creds($actual_pass, $post_password) 
 {
-	// Check database at this point to validate credentials
 	return (password_verify($post_password, $actual_pass));
 }
 

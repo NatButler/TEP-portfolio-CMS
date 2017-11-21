@@ -32,7 +32,15 @@
 
 	<table id="images_table">
 		<thead>
-			<tr><th>Id</th><th>Thumb</th><th>File name</th><th>Alt tag</th><th>Category</th><th>Image set</th><th>Img slider</th></tr>
+			<tr>
+				<th>Id</th>
+				<th>Thumb</th>
+				<th>File name</th>
+				<th>Alt tag</th>
+				<th>Category</th>
+				<th>Image set</th>
+				<th>Inc. in slider</th>
+			</tr>
 		</thead>
 		<tbody>
 		<?php foreach($images as $image) : ?>

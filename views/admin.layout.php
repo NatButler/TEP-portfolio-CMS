@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
-
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 
@@ -47,30 +45,30 @@
 			<nav>
 				<ul>
 					<li>
-				       	<a href="settings.php" <?php if ($current_page === 'settings') { echo 'class="current"'; } ?> >
-				            <span>Settings</span>
-				        </a>
-				    </li>
-				    <li>
-				        <a href="blog.php" <?php if ($current_page === 'blog') { echo 'class="current"'; } ?> >
-				            <span>Blog</span>
-				        </a>
-				    </li>				    
-				    <li>
-				        <a href="portfolio.php" <?php if ($current_page === 'portfolio') { echo 'class="current"'; } ?> >
-				            <span>Image library</span>
-				        </a>
-				    </li>
-				    <li>
-				    	<a href="page-text.php" <?php if ($current_page === 'page-text') { echo 'class="current"'; } ?> >
-				    		<span>Page text</span>
-				    	</a>
-				    </li>
-				    <li>
-				    	<a id="logout" href="logout.php" <?php if ($current_page === 'logout') {echo 'class="current"'; } ?> >
-				    		<span>Logout</span>
-				    	</a>
-				    </li>
+		       	<a href="settings.php" <?php if ($current_page === 'settings') { echo 'class="current"'; } ?> >
+	            <span>Settings</span>
+		        </a>
+				  </li>
+			    <li>
+		        <a href="blog.php" <?php if ($current_page === 'blog') { echo 'class="current"'; } ?> >
+		          <span>Blog</span>
+		        </a>
+			    </li>				    
+			    <li>
+		        <a href="portfolio.php" <?php if ($current_page === 'portfolio') { echo 'class="current"'; } ?> >
+		          <span>Image library</span>
+		        </a>
+			    </li>
+			    <li>
+			    	<a href="page-text.php" <?php if ($current_page === 'page-text') { echo 'class="current"'; } ?> >
+			    		<span>Page text</span>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a id="logout" href="logout.php" <?php if ($current_page === 'logout') {echo 'class="current"'; } ?> >
+			    		<span>Logout</span>
+			    	</a>
+			    </li>
 				</ul>
 			</nav>
 		</aside>
@@ -86,9 +84,7 @@
     	<div id="lightbox-window"></div>
 	</div>
 
-
-<script src="../js/admin-scripts.js"></script>
-<script src="../js/lightbox.js"></script>
-
+	<script src="../js/admin-scripts.js"></script>
+	<script src="../js/lightbox.js"></script>
 </body>
 </html>
